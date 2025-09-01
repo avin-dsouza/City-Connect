@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kolhapur City Map Explorer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f0f0;
+    }
+
+    /* Navigation */
+    nav {
+      background: #4CAF50;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 40px;
+      background: #cfe9cf;
+    }
+
+    /* Info Paragraph */
+    .info {
+      padding: 20px;
+      background: #ffffff;
+      margin: 20px;
+      border: 1px solid #ccc;
+      line-height: 1.6;
+    }
+
+    /* Map Section */
+    .map-section {
+      text-align: center;
+      padding: 20px;
+    }
+        
+    .map-display {
+      width: 80%;  
+      display: block;  
+      margin: auto;
+      border: 2px solid green;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #ddd;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#map">Map</a>
+    <a href="#attractions">Attractions</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <h1>Explore Kolhapur</h1>
+    <p>A simple project to see Kolhapur's map and famous places.</p>
+  </section>
+
+  <!-- Info Paragraph -->
+  <section class="info">
+    <p>
+      Kolhapur, known as the Dakshin Kashi (Varanasi of the South), has a glorious history deeply rooted in spirituality and valor. 
+      It is home to the Mahalaxmi Temple, one of the Shakti Peethas, attracting devotees for centuries. 
+      The city was an important seat of the Maratha Empire, ruled by Chhatrapati Shahu Maharaj, a visionary leader who pioneered social reforms and education. 
+      Rich traditions of wrestling (kushti), classical arts, and unique crafts like Kolhapuri chappals and jewelry also reflect its cultural pride.
+    </p>
+    <p>
+      Modern Kolhapur is a vibrant blend of heritage and development. 
+      It is known as the Sugar Bowl of Maharashtra due to its thriving sugar industry, while also being a hub for automobile and foundry industries. 
+      The city offers a lively food culture, especially the spicy Kolhapuri cuisine, famous across India. 
+      With improved infrastructure, Kolhapur has grown into a modern city while retaining its traditional warmth—making it a unique destination for both pilgrims and travelers.
+    </p>
+  </section>
+
+  <!-- Tourist Attractions -->
+  <section id="attractions" class="info">
+    <h2>Kolhapur Tourist Attractions</h2>
+
+    <details open>
+      <summary>🏛️ Heritage & Palaces</summary>
+      <ul>
+        <li>New Palace (Shahu Palace Museum)</li>
+        <li>Old Palace (Bhavani Mandap)</li>
+        <li>Town Hall Museum</li>
+        <li>Shalini Palace (Rankala Lake)</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>⛪ Temples</summary>
+      <ul>
+        <li>Mahalaxmi (Ambabai) Temple</li>
+        <li>Jyotiba Temple</li>
+        <li>Koppeshwar Temple</li>
+        <li>Bahubali Hill (Kumbhojgiri)</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>🌊 Nature & Lakes</summary>
+      <ul>
+        <li>Rankala Lake</li>
+        <li>Radhanagari Wildlife Sanctuary</li>
+        <li>Dajipur Sanctuary</li>
+        <li>Sagareshwar Sanctuary</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>🏞️ Forts & Views</summary>
+      <ul>
+        <li>Panhala Fort</li>
+        <li>Gaganbawda</li>
+        <li>Pargad Fort</li>
+      </ul>
+    </details>
+  </section>
+
+<!-- Map Section -->
+<section class="map-section" id="map">
+  <h2>Kolhapur City Map</h2>
+  <img src="kolhapur.jpg" alt="Kolhapur Map" class="map-display">
+</section>
+
+<!-- History Section -->
+<section class="info" id="history">
+  <h2>History of Kolhapur</h2>
+
+  <details open>
+    <summary>🏛️ Ancient Period</summary>
+    <p>
+      Kolhapur is also called Karuvir or Dakshin Kashi in Hindu stories. 
+      The Skanda Purana says Kolhapur is the home of Mahakali (Mahalaxmi), 
+      which made it a holy city since very old times.
+    </p>
+    <p>
+      Archaeologists found that people lived here from at least 200 BCE. 
+      It was also an important stop for trade between Konkan and the Deccan Plateau.
+    </p>
+  </details>
+
+  <details>
+    <summary>⚔️ Medieval Era</summary>
+    <p>
+      From 940–1212 CE, Kolhapur grew under the Shilahara kings, 
+      who built temples like parts of the Mahalaxmi Temple. 
+      Later, the Yadavas of Devagiri ruled here.
+    </p>
+    <p>
+      After that, Kolhapur was influenced by the Delhi Sultanate 
+      and Bahmani Sultanate, though local rulers kept some control.
+    </p>
+  </details>
+
+  <details>
+    <summary>🦁 Maratha Period</summary>
+    <p>
+      In the 1600s, Kolhapur became important under 
+      Chhatrapati Shivaji Maharaj and the Maratha Empire.
+    </p>
+    <p>
+      After Shivaji’s death, two royal seats were formed: 
+      Satara (main line) and Kolhapur (younger branch). 
+      In 1710, Kolhapur State was officially created.
+    </p>
+  </details>
+
+  <details>
+    <summary>👑 Shahu Maharaj & Reforms</summary>
+    <p>
+      The most famous ruler of Kolhapur was 
+      Chhatrapati Rajarshi Shahu Maharaj (1874–1922). 
+      He worked for social justice, education, 
+      and equality for all people.
+    </p>
+    <p>
+      He promoted wrestling (Kushti), 
+      supported industries, and built the base for modern Kolhapur.
+    </p>
+  </details>
+
+  <details>
+    <summary>🇮🇳 Colonial & Modern Era</summary>
+    <p>
+      During British rule, Kolhapur was a princely state. 
+      After 1947, it became part of India.
+    </p>
+    <p>
+      In 1960, after Maharashtra state was formed, 
+      Kolhapur became a district headquarters.
+    </p>
+  </details>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Kolhapur Explorer</p>
+  </footer>
+
+</body>
+</html>

@@ -74,14 +74,21 @@
     <a href="#attractions">Attractions</a>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero" id="home">
-    <h1>Explore Kolhapur</h1>
-    <p>A simple project to see Kolhapur's map and famous places.</p>
-  </section>
+<!-- Hero + Info Section -->
+<section class="hero-info" style="margin:0; padding:0; position:relative;">
 
-  <!-- Info Paragraph -->
-  <section class="info">
+  <!-- Image with fade -->
+  <div style="position:relative; width:100%; max-height:500px; overflow:hidden;">
+    <img src="kolhapur-baner.jpg" alt="Kolhapur City" 
+         style="width:100%; height:100%; object-fit:cover; display:block;">
+    
+    <!-- Fade effect -->
+    <div style="position:absolute; bottom:0; left:0; right:0; height:200px;
+                background: linear-gradient(to bottom, transparent, rgb(245, 238, 238));"></div>
+  </div>
+
+  <!-- Paragraph -->
+  <div style="padding: 30px; max-width: 900px; margin: auto; line-height: 1.8; font-size: 18px;">
     <p>
       Kolhapur, known as the Dakshin Kashi (Varanasi of the South), has a glorious history deeply rooted in spirituality and valor. 
       It is home to the Mahalaxmi Temple, one of the Shakti Peethas, attracting devotees for centuries. 
@@ -94,7 +101,9 @@
       The city offers a lively food culture, especially the spicy Kolhapuri cuisine, famous across India. 
       With improved infrastructure, Kolhapur has grown into a modern city while retaining its traditional warmth—making it a unique destination for both pilgrims and travelers.
     </p>
-  </section>
+  </div>
+</section>
+
 
   <!-- Tourist Attractions -->
   <section id="attractions" class="info">

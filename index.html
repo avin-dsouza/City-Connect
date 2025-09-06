@@ -4,66 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kolhapur City Map Explorer</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f0f0f0;
-    }
-
-    /* Navigation */
-    nav {
-      background: #4CAF50;
-      padding: 10px;
-    }
-
-    nav a {
-      color: white;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    /* Hero Section */
-    .hero {
-      text-align: center;
-      padding: 40px;
-      background: #cfe9cf;
-    }
-
-    /* Info Paragraph */
-    .info {
-      padding: 20px;
-      background: #ffffff;
-      margin: 20px;
-      border: 1px solid #ccc;
-      line-height: 1.6;
-    }
-
-    /* Map Section */
-    .map-section {
-      text-align: center;
-      padding: 20px;
-    }
-        
-    .map-display {
-      width: 80%;  
-      display: block;  
-      margin: auto;
-      border: 2px solid green;
-    }
-
-    footer {
-      text-align: center;
-      padding: 10px;
-      background: #ddd;
-      margin-top: 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -74,21 +15,14 @@
     <a href="#attractions">Attractions</a>
   </nav>
 
-<!-- Hero + Info Section -->
-<section class="hero-info" style="margin:0; padding:0; position:relative;">
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <img src="Banner.png" alt="Kolhapur City">
+    <div class="fade"></div>
+  </section>
 
-  <!-- Image with fade -->
-  <div style="position:relative; width:100%; max-height:500px; overflow:hidden;">
-    <img src="kolhapur-baner.jpg" alt="Kolhapur City" 
-         style="width:100%; height:100%; object-fit:cover; display:block;">
-    
-    <!-- Fade effect -->
-    <div style="position:absolute; bottom:0; left:0; right:0; height:200px;
-                background: linear-gradient(to bottom, transparent, rgb(245, 238, 238));"></div>
-  </div>
-
-  <!-- Paragraph -->
-  <div style="padding: 30px; max-width: 900px; margin: auto; line-height: 1.8; font-size: 18px;">
+  <!-- Info Section -->
+  <section class="info">
     <p>
       Kolhapur, known as the Dakshin Kashi (Varanasi of the South), has a glorious history deeply rooted in spirituality and valor. 
       It is home to the Mahalaxmi Temple, one of the Shakti Peethas, attracting devotees for centuries. 
@@ -101,130 +35,111 @@
       The city offers a lively food culture, especially the spicy Kolhapuri cuisine, famous across India. 
       With improved infrastructure, Kolhapur has grown into a modern city while retaining its traditional warmth—making it a unique destination for both pilgrims and travelers.
     </p>
-  </div>
-</section>
-
+  </section>
 
   <!-- Tourist Attractions -->
   <section id="attractions" class="info">
     <h2>Kolhapur Tourist Attractions</h2>
 
-    <details open>
-      <summary>🏛️ Heritage & Palaces</summary>
-      <ul>
-        <li>New Palace (Shahu Palace Museum)</li>
-        <li>Old Palace (Bhavani Mandap)</li>
-        <li>Town Hall Museum</li>
-        <li>Shalini Palace (Rankala Lake)</li>
-      </ul>
+    <h3>🏛️ Heritage & Palaces</h3>
+    <ul>
+      <li>New Palace (Shahu Palace Museum)</li>
+      <li>Old Palace (Bhavani Mandap)</li>
+      <li>Town Hall Museum</li>
+      <li>Shalini Palace (Rankala Lake)</li>
+    </ul>
+
+    <h3>⛪ Temples</h3>
+    <ul>
+      <li>Mahalaxmi (Ambabai) Temple</li>
+      <li>Jyotiba Temple</li>
+      <li>Koppeshwar Temple</li>
+      <li>Bahubali Hill (Kumbhojgiri)</li>
+    </ul>
+
+    <h3>🌊 Nature & Lakes</h3>
+    <ul>
+      <li>Rankala Lake</li>
+      <li>Radhanagari Wildlife Sanctuary</li>
+      <li>Dajipur Sanctuary</li>
+      <li>Sagareshwar Sanctuary</li>
+    </ul>
+
+    <h3>🏞️ Forts & Views</h3>
+    <ul>
+      <li>Panhala Fort</li>
+      <li>Gaganbawda</li>
+      <li>Pargad Fort</li>
+    </ul>
+  </section>
+
+  <!-- Map Section -->
+  <section class="map-section" id="map">
+    <h2>Kolhapur City Map</h2>
+    <img src="kolhapur.jpg" alt="Kolhapur Map" class="map-display">
+  </section>
+
+  <!-- History Section -->
+  <section class="info" id="history">
+    <h2>History of Kolhapur</h2>
+
+    <details>
+      <summary>🏛️ Ancient Period</summary>
+      <p>
+        Kolhapur is referred to as Karuvir or Dakshin Kashi in Hindu mythology. 
+        The Skanda Purana describes Kolhapur as the abode of Goddess Mahalaxmi (Ambabai), making it a major religious center since ancient times. 
+        Archaeological findings suggest Kolhapur’s civilization dates back to at least 200 BCE, with evidence of trade and settlements. 
+        The city was an important stop on the ancient trade routes that connected coastal Konkan ports with the Deccan Plateau.
+      </p>
     </details>
 
     <details>
-      <summary>⛪ Temples</summary>
-      <ul>
-        <li>Mahalaxmi (Ambabai) Temple</li>
-        <li>Jyotiba Temple</li>
-        <li>Koppeshwar Temple</li>
-        <li>Bahubali Hill (Kumbhojgiri)</li>
-      </ul>
+      <summary>⚔️ Medieval Era</summary>
+      <p>
+        Under the Shilahara Dynasty (940–1212 CE), Kolhapur rose to prominence as a capital city. 
+        Rulers like Gandaraditya Shilahara contributed to temple construction, including portions of the Mahalaxmi Temple. 
+        Later, the Yadavas of Devagiri (12th–13th century CE), under kings like Singhana II, brought Kolhapur under their influence. 
+        During expansions of the Delhi Sultanate and Bahmani Sultanate, Kolhapur remained a contested but culturally resilient city, guarded by local chieftains and temple authorities.
+      </p>
     </details>
 
     <details>
-      <summary>🌊 Nature & Lakes</summary>
-      <ul>
-        <li>Rankala Lake</li>
-        <li>Radhanagari Wildlife Sanctuary</li>
-        <li>Dajipur Sanctuary</li>
-        <li>Sagareshwar Sanctuary</li>
-      </ul>
+      <summary>🦁 Maratha Period</summary>
+      <p>
+        In the 17th century, Kolhapur gained importance under Chhatrapati Shivaji Maharaj, who often used Panhala Fort as a strategic stronghold. 
+        The legendary Baji Prabhu Deshpande fought the heroic Battle of Pavan Khind (1660) near Kolhapur, securing Shivaji’s escape. 
+        After Shivaji’s death, succession disputes created two royal seats: Satara (main line of Shivaji) and Kolhapur (younger branch of the Bhosale dynasty). 
+        In 1710, Kolhapur State was formally established as a Maratha princely state, led by descendants like Chhatrapati Shahu I of Kolhapur.
     </details>
 
     <details>
-      <summary>🏞️ Forts & Views</summary>
-      <ul>
-        <li>Panhala Fort</li>
-        <li>Gaganbawda</li>
-        <li>Pargad Fort</li>
-      </ul>
+      <summary>👑 Shahu Maharaj & Reforms</summary>
+      <p>
+        The most celebrated ruler of Kolhapur was Chhatrapati Rajarshi Shahu Maharaj (1874–1922). 
+        He became a pioneer of social justice, free education, and upliftment of marginalized communities. 
+        He was influenced by reformers like Jyotirao Phule, and in turn, inspired later leaders such as Dr. B.R. Ambedkar. 
+        Shahu Maharaj also popularized wrestling (Kushti) and supported industrialization, leaving a permanent mark on Kolhapur’s progressive identity.
+      </p>
+    </details>
+
+    <details>
+      <summary>🇮🇳 Colonial & Modern Era</summary>
+      <p>
+        During British rule, Kolhapur remained a princely state under the Bhosale dynasty, allied with the Crown but internally autonomous. 
+        Leaders like Chhatrapati Shahaji II (1874–1922, contemporary with Rajarshi Shahu) maintained royal traditions alongside reforms. 
+        After India’s independence in 1947, Kolhapur merged into the Indian Union. 
+        With the formation of Maharashtra in 1960, Kolhapur became a district headquarters and grew into a hub for sugar production, automobile industries, wrestling, and arts.
+      </p>
     </details>
   </section>
 
-<!-- Map Section -->
-<section class="map-section" id="map">
-  <h2>Kolhapur City Map</h2>
-  <img src="kolhapur.jpg" alt="Kolhapur Map" class="map-display">
-</section>
-
-<!-- History Section -->
-<section class="info" id="history">
-  <h2>History of Kolhapur</h2>
-
-  <details open>
-    <summary>🏛️ Ancient Period</summary>
-    <p>
-      Kolhapur is also called Karuvir or Dakshin Kashi in Hindu stories. 
-      The Skanda Purana says Kolhapur is the home of Mahakali (Mahalaxmi), 
-      which made it a holy city since very old times.
-    </p>
-    <p>
-      Archaeologists found that people lived here from at least 200 BCE. 
-      It was also an important stop for trade between Konkan and the Deccan Plateau.
-    </p>
-  </details>
-
-  <details>
-    <summary>⚔️ Medieval Era</summary>
-    <p>
-      From 940–1212 CE, Kolhapur grew under the Shilahara kings, 
-      who built temples like parts of the Mahalaxmi Temple. 
-      Later, the Yadavas of Devagiri ruled here.
-    </p>
-    <p>
-      After that, Kolhapur was influenced by the Delhi Sultanate 
-      and Bahmani Sultanate, though local rulers kept some control.
-    </p>
-  </details>
-
-  <details>
-    <summary>🦁 Maratha Period</summary>
-    <p>
-      In the 1600s, Kolhapur became important under 
-      Chhatrapati Shivaji Maharaj and the Maratha Empire.
-    </p>
-    <p>
-      After Shivaji’s death, two royal seats were formed: 
-      Satara (main line) and Kolhapur (younger branch). 
-      In 1710, Kolhapur State was officially created.
-    </p>
-  </details>
-
-  <details>
-    <summary>👑 Shahu Maharaj & Reforms</summary>
-    <p>
-      The most famous ruler of Kolhapur was 
-      Chhatrapati Rajarshi Shahu Maharaj (1874–1922). 
-      He worked for social justice, education, 
-      and equality for all people.
-    </p>
-    <p>
-      He promoted wrestling (Kushti), 
-      supported industries, and built the base for modern Kolhapur.
-    </p>
-  </details>
-
-  <details>
-    <summary>🇮🇳 Colonial & Modern Era</summary>
-    <p>
-      During British rule, Kolhapur was a princely state. 
-      After 1947, it became part of India.
-    </p>
-    <p>
-      In 1960, after Maharashtra state was formed, 
-      Kolhapur became a district headquarters.
-    </p>
-  </details>
-</section>
-
+  <!-- History Buttons -->
+  <div class="buttons">
+    <a href="1500.html">1500s</a>
+    <a href="1600.html">1600s</a>
+    <a href="1800.html">1800s</a>
+    <a href="1900.html">1900s</a>
+  </div>
 
   <!-- Footer -->
   <footer>

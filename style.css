@@ -1,0 +1,139 @@
+    /* Reset & Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f9f9f9;
+      color: #2c3e50;
+      line-height: 1.6;
+    }
+
+    h2, h3 {
+      font-weight: 600;
+    }
+
+    /* Navigation */
+    nav {
+      background: #2e7d32;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #c8e6c9;
+    }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .hero img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .hero .fade {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 200px;
+      background: linear-gradient(to bottom, transparent, #f9f9f9);
+    }
+
+    /* Info Section */
+    .info {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 25px 30px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    .info h2 {
+      margin-bottom: 15px;
+      color: #1b5e20;
+    }
+
+    #attractions h3 {
+      margin-top: 20px;
+      color: #2e7d32;
+    }
+
+    #attractions ul {
+      margin-left: 20px;
+      margin-top: 8px;
+    }
+
+    /* Map Section */
+    .map-section {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .map-section h2 {
+      margin-bottom: 20px;
+      color: #1b5e20;
+    }
+
+    .map-display {
+      width: 85%;
+      max-width: 900px;
+      border: 3px solid #2e7d32;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+
+    /* Buttons */
+    .buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin: 30px 0;
+    }
+
+    .buttons a {
+      padding: 10px 22px;
+      background: #2e7d32;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: 500;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .buttons a:hover {
+      background: #1b5e20;
+      transform: translateY(-2px);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #e0e0e0;
+      font-size: 14px;
+      margin-top: 40px;
+    }

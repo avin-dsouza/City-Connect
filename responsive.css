@@ -1,0 +1,71 @@
+/* ---------- Base (Mobile-First) Styles ---------- */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+header, footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 8px 0;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* ---------- Tablet (≥768px) ---------- */
+@media (min-width: 768px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin: 0 1rem;
+  }
+
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ---------- Desktop (≥1024px) ---------- */
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  header, footer {
+    padding: 1.5rem;
+  }
+}
+
+/* ---------- Touch-Friendly Elements ---------- */
+button, a {
+  touch-action: manipulation;
+  cursor: pointer;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+}

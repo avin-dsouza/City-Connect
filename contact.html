@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team & Contact | City Connect</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="CityConnect.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #40e0d0;
+      color: white;
+      text-align: center;
+      padding: 25px 10px;
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .team-section {
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .member {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 25px;
+      transition: all 0.3s ease;
+      height: 100%;
+    }
+
+    .member:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+    }
+
+    .member img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      border: 3px solid #40e0d0;
+    }
+
+    .member h4 {
+      color: #00796b;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .member p.role {
+      color: #555;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .member a {
+      color: #40e0d0;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .member a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Meet Our Team</h1>
+    <p class="lead">City Connect was created by a passionate group of students dedicated to showcasing Kolhapur’s beauty and culture.</p>
+  </header>
+
+  <!-- Team Section -->
+  <section class="team-section container">
+    <div class="row g-4 justify-content-center mb-4">
+      <!-- Row 1 (3 Members) -->
+      <div class="col-md-4 col-sm-6">
+        <div class="member">
+          <img src="member/Member1.jpeg" alt="Avin Dsouza">
+          <h4>Avin Dsouza</h4>
+          <p class="role">Frontend & Design</p>
+          <p>Designed the UI layout, page structure, and visual theme for City Connect.</p>
+          <a href="mailto:avin@example.com">avin@example.com</a>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6">
+        <div class="member">
+          <img src="member/Member2.jpeg" alt="Member 2">
+          <h4>Siddhesh Chavan</h4>
+          <p class="role">Content & Research</p>
+          <p>Gathered information about Kolhapur’s tourist sites, culture, and local highlights.</p>
+          <a href="mailto:member2@example.com">member2@example.com</a>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6">
+        <div class="member">
+          <img src="member/Member3.jpeg" alt="Member 3">
+          <h4>Shrinidhi Farale</h4>
+          <p class="role">Bootstrap Integration</p>
+          <p>Implemented responsive layouts and ensured consistent styling using Bootstrap.</p>
+          <a href="mailto:member3@example.com">member3@example.com</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+      <!-- Row 2 (2 Members) -->
+      <div class="col-md-4 col-sm-6">
+        <div class="member">
+          <img src="member/Member4.jpeg" alt="Member 4">
+          <h4>Sneha Desai</h4>
+          <p class="role">Documentation & QA</p>
+          <p>Handled testing, content proofing, and documentation for better project flow.</p>
+          <a href="mailto:member4@example.com">member4@example.com</a>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6">
+        <div class="member">
+          <img src="https://i.pravatar.cc/150?img=7" alt="Member 5">
+          <h4>Laxmi Guddad</h4>
+          <p class="role">Research & Support</p>
+          <p>Assisted in gathering location details and managing layout suggestions.</p>
+          <a href="mailto:member5@example.com">member5@example.com</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-5">
+      <a href="CityConnect.html" class="btn btn-dark">← Back to Home</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© City Connect | Developed by Team City Connect</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -3,14 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kolhapur City Map Explorer</title>
+  <title>Tourist Attractions of Kolhapur</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Poppins font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="CityConnect.css">
 </head>
 <body>
 
-  <header>
-    <h1>CityConnect</h1>
-  </header>
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">City Connect</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tourist">Tourist Attractions</a></li>
+        <li class="nav-item"><a class="nav-link" href="more.html">History</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 
   <section class="welcome">
     <h1>Welcome to CityConnect</h1>
@@ -42,40 +63,178 @@
     <img src="kolhapur.jpg" class="map-display">
   </section>
 
-  <section class="info">
-  <h2>🏛️ Kolhapur Tourist Attractions</h2>
-  <div class="attractions">
-    <div class="place">
-      <h3>New Palace</h3>
-      <img src="static/new_palace.jpeg" alt="New Palace Kolhapur">
-    </div>
+  <section id="tourist" class="info py-5">
+    <div class="container">
+      <h2 class="mb-4">🌆 Tourist Attractions in Kolhapur</h2>
+      <div class="row g-4">
+        
+        <!-- New Palace -->
+        <div class="col-md-4">
+          <div class="card h-100" data-bs-toggle="modal" data-bs-target="#newpalaceModal">
+            <img src="newpalace.jpg" class="card-img-top" alt="New Palace">
+            <div class="card-body">
+              <h5 class="card-title">New Palace</h5>
+            </div>
+          </div>
+        </div>
 
-    <div class="place">
-      <h3>Old Palace</h3>
-      <img src="static/old_palace.jpeg" alt="Old Palace Kolhapur">
-    </div>
+        <!-- Town Hall Museum -->
+        <div class="col-md-4">
+          <div class="card h-100" data-bs-toggle="modal" data-bs-target="#museumModal">
+            <img src="townhall.jpg" class="card-img-top" alt="Town Hall Museum">
+            <div class="card-body">
+              <h5 class="card-title">Town Hall Museum</h5>
+            </div>
+          </div>
+        </div>
 
-    <div class="place">
-      <h3>Town Hall Museum</h3>
-      <img src="static/town_hall.jpeg" alt="Town Hall Museum Kolhapur">
-    </div>
+        <!-- Mahalaxmi Temple -->
+        <div class="col-md-4">
+          <div class="card h-100" data-bs-toggle="modal" data-bs-target="#mahalaxmiModal">
+            <img src="mahalaxmi.jpg" class="card-img-top" alt="Mahalaxmi Temple">
+            <div class="card-body">
+              <h5 class="card-title">Mahalaxmi Temple</h5>
+            </div>
+          </div>
+        </div>
 
-    <div class="place">
-      <h3>Mahalaxmi Temple</h3>
-      <img src="static/jotiba_temple.jpg" alt="Jyotiba Temple Kolhapur">
-    </div>
+        <!-- Rankala Lake -->
+        <div class="col-md-4">
+          <div class="card h-100" data-bs-toggle="modal" data-bs-target="#rankalaModal">
+            <img src="rankala.jpg" class="card-img-top" alt="Rankala Lake">
+            <div class="card-body">
+              <h5 class="card-title">Rankala Lake</h5>
+            </div>
+          </div>
+        </div>
 
-    <div class="place">
-      <h3>Rankala Lake</h3>
-      <img src="static/rankala_lake.jpeg" alt="Rankala Lake Kolhapur">
-    </div>
+        <!-- Place of Birth -->
+        <div class="col-md-4">
+          <div class="card h-100" data-bs-toggle="modal" data-bs-target="#birthplaceModal">
+            <img src="birthplace.jpg" class="card-img-top" alt="Place of Birth">
+            <div class="card-body">
+              <h5 class="card-title">Place of Birth</h5>
+            </div>
+          </div>
+        </div>
 
-    <div class="place">
-      <h3>Panhala Fort</h3>
-      <img src="static/panhala_fort.jpeg" alt="Panhala Fort Kolhapur">
+        <!-- Panhala Fort -->
+        <div class="col-md-4">
+          <div class="card h-100" data-bs-toggle="modal" data-bs-target="#panhalaModal">
+            <img src="panhala.jpg" class="card-img-top" alt="Panhala Fort">
+            <div class="card-body">
+              <h5 class="card-title">Panhala Fort</h5>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔹 MODALS SECTION -->
+
+  <!-- New Palace -->
+  <div class="modal fade" id="newpalaceModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">New Palace, Kolhapur</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Location:</strong> Shahupuri, Kolhapur</p>
+          <p><strong>History:</strong> Built in 1884 during the reign of Chhatrapati Shahu Maharaj, this magnificent structure features Indo-Saracenic architecture and houses the royal family’s museum.</p>
+          <p><strong>Nearby Restaurant:</strong> Opal Restaurant – famous for authentic Kolhapuri thali.</p>
+        </div>
+      </div>
     </div>
   </div>
-  </section>
+
+  <!-- Town Hall Museum -->
+  <div class="modal fade" id="museumModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Town Hall Museum</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Location:</strong> C Ward, Kolhapur</p>
+          <p><strong>History:</strong> The Town Hall Museum showcases ancient artifacts, sculptures, and crafts of the Maratha Empire, giving insights into Kolhapur’s cultural evolution.</p>
+          <p><strong>Nearby Restaurant:</strong> Hotel Parakh – known for Kolhapuri misal pav.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mahalaxmi Temple -->
+  <div class="modal fade" id="mahalaxmiModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Mahalaxmi Temple</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Location:</strong> Mahadwar Road, Kolhapur</p>
+          <p><strong>History:</strong> One of the Shakti Peethas, the temple was built in the 7th century by the Chalukyas and is dedicated to Goddess Mahalaxmi, the deity of prosperity.</p>
+          <p><strong>Nearby Restaurant:</strong> Padma Guest House – known for vegetarian meals and thalis.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rankala Lake -->
+  <div class="modal fade" id="rankalaModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Rankala Lake</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Location:</strong> Near Rajarampuri, Kolhapur</p>
+          <p><strong>History:</strong> A scenic lake formed naturally, Rankala is surrounded by gardens and food stalls and is a popular leisure spot for both locals and tourists.</p>
+          <p><strong>Nearby Restaurant:</strong> Dominos or Ice Cream Parlour by the lakefront.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Place of Birth -->
+  <div class="modal fade" id="birthplaceModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Place of Birth - Chhatrapati Shahu Maharaj</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Location:</strong> Laxmipuri, Kolhapur</p>
+          <p><strong>History:</strong> The birthplace of the revered King Shahu Maharaj, who played a major role in social reform and education development in Maharashtra.</p>
+          <p><strong>Nearby Restaurant:</strong> Dehaati Kolhapuri – local food with traditional ambience.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Panhala Fort -->
+  <div class="modal fade" id="panhalaModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Panhala Fort</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Location:</strong> Panhala, 20 km from Kolhapur</p>
+          <p><strong>History:</strong> A historical hill fort where Chhatrapati Shivaji Maharaj once stayed. Offers panoramic views and deep-rooted Maratha history.</p>
+          <p><strong>Nearby Restaurant:</strong> Hilltop Heritage Café – famous for local snacks and tea.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <section class="info emergency">
   <h2>🚨 Emergency Contacts</h2>
@@ -197,6 +356,10 @@
   <footer>
     <p>© City Connect</p>
   </footer>
+
+  <!-- Bootstrap JS Bundle -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 
 </body>
 </html>

@@ -6,9 +6,11 @@
 }
 
 body {
-  background-color: #f4f9f9;
-  color: #333;
-  line-height: 1.6;
+  background-image: url("Web_backgroung.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .navbar-custom {

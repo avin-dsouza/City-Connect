@@ -3,11 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tourist Attractions of Kolhapur</title>
-
-  <!-- Bootstrap -->
+  <title>CityConnect</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Poppins font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="CityConnect.css">
 </head>
@@ -65,63 +62,57 @@
 
   <section id="tourist" class="info py-5">
     <div class="container">
-      <h2 class="mb-4">🌆 Tourist Attractions in Kolhapur</h2>
+      <h2 class="mb-4">Tourist Attractions in Kolhapur</h2>
       <div class="row g-4">
         
-        <!-- New Palace -->
         <div class="col-md-4">
           <div class="card h-100" data-bs-toggle="modal" data-bs-target="#newpalaceModal">
-            <img src="newpalace.jpg" class="card-img-top" alt="New Palace">
+            <img src="static/new_palace.jpeg" class="card-img-top" alt="New Palace">
             <div class="card-body">
               <h5 class="card-title">New Palace</h5>
             </div>
           </div>
         </div>
 
-        <!-- Town Hall Museum -->
         <div class="col-md-4">
           <div class="card h-100" data-bs-toggle="modal" data-bs-target="#museumModal">
-            <img src="townhall.jpg" class="card-img-top" alt="Town Hall Museum">
+            <img src="static/townhall.jpeg" class="card-img-top" alt="Town Hall Museum">
             <div class="card-body">
               <h5 class="card-title">Town Hall Museum</h5>
             </div>
           </div>
         </div>
 
-        <!-- Mahalaxmi Temple -->
         <div class="col-md-4">
           <div class="card h-100" data-bs-toggle="modal" data-bs-target="#mahalaxmiModal">
-            <img src="mahalaxmi.jpg" class="card-img-top" alt="Mahalaxmi Temple">
+            <img src="static/jotiba_temple.jpg" class="card-img-top" alt="Mahalaxmi Temple">
             <div class="card-body">
               <h5 class="card-title">Mahalaxmi Temple</h5>
             </div>
           </div>
         </div>
 
-        <!-- Rankala Lake -->
         <div class="col-md-4">
           <div class="card h-100" data-bs-toggle="modal" data-bs-target="#rankalaModal">
-            <img src="rankala.jpg" class="card-img-top" alt="Rankala Lake">
+            <img src="static/rankala_lake.jpeg" class="card-img-top" alt="Rankala Lake">
             <div class="card-body">
               <h5 class="card-title">Rankala Lake</h5>
             </div>
           </div>
         </div>
 
-        <!-- Place of Birth -->
         <div class="col-md-4">
           <div class="card h-100" data-bs-toggle="modal" data-bs-target="#birthplaceModal">
-            <img src="birthplace.jpg" class="card-img-top" alt="Place of Birth">
+            <img src="static/Place_of_birth.jpg" class="card-img-top" alt="Place of Birth">
             <div class="card-body">
               <h5 class="card-title">Place of Birth</h5>
             </div>
           </div>
         </div>
 
-        <!-- Panhala Fort -->
         <div class="col-md-4">
           <div class="card h-100" data-bs-toggle="modal" data-bs-target="#panhalaModal">
-            <img src="panhala.jpg" class="card-img-top" alt="Panhala Fort">
+            <img src="static/panhala_fort.jpeg" class="card-img-top" alt="Panhala Fort">
             <div class="card-body">
               <h5 class="card-title">Panhala Fort</h5>
             </div>
@@ -132,26 +123,40 @@
     </div>
   </section>
 
-  <!-- 🔹 MODALS SECTION -->
+  
+<!-- MODALS SECTION -->
 
-  <!-- New Palace -->
-  <div class="modal fade" id="newpalaceModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">New Palace, Kolhapur</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          <p><strong>Location:</strong> Shahupuri, Kolhapur</p>
-          <p><strong>History:</strong> Built in 1884 during the reign of Chhatrapati Shahu Maharaj, this magnificent structure features Indo-Saracenic architecture and houses the royal family’s museum.</p>
-          <p><strong>Nearby Restaurant:</strong> Opal Restaurant – famous for authentic Kolhapuri thali.</p>
-        </div>
+<div class="modal fade" id="newpalaceModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">New Palace, Kolhapur</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>History:</strong> Built in 1884 during the reign of Chhatrapati Shahu Maharaj, this magnificent structure features Indo-Saracenic architecture and houses the royal family’s museum.</p>
+        <p><strong>Nearby Restaurant:</strong> Opal Restaurant – famous for authentic Kolhapuri thali.</p>
+
+        <p>
+          <strong>Location:</strong>
+          <a href="https://www.google.com/maps/place/New+Palace,+Kolhapur,+Maharashtra+416003/@16.7124997,74.3755529,11.07z/data=!4m6!3m5!1s0x3bc10063a906d069:0x16a3f6fe8211057b!8m2!3d16.7187591!4d74.2333395!16s%2Fg%2F12hncbr_m!5m2!1e4!1e1?entry=ttu"
+             target="_blank"
+             class="location-link">
+             Kolhapur, Maharashtra
+          </a>
+        </p>
+
+        <a href="https://en.wikipedia.org/wiki/New_Palace,_Kolhapur"
+           target="_blank"
+           class="wiki-link">
+           Learn more on Wikipedia →
+        </a>
       </div>
     </div>
   </div>
+</div>
 
-  <!-- Town Hall Museum -->
+
   <div class="modal fade" id="museumModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
@@ -160,15 +165,28 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
         <div class="modal-body">
-          <p><strong>Location:</strong> C Ward, Kolhapur</p>
           <p><strong>History:</strong> The Town Hall Museum showcases ancient artifacts, sculptures, and crafts of the Maratha Empire, giving insights into Kolhapur’s cultural evolution.</p>
           <p><strong>Nearby Restaurant:</strong> Hotel Parakh – known for Kolhapuri misal pav.</p>
+
+          <p>
+          <strong>Location:</strong>
+          <a href="https://www.google.com/maps/place/New+Palace,+Kolhapur,+Maharashtra+416003/@16.7124997,74.3755529,11.07z/data=!4m6!3m5!1s0x3bc10063a906d069:0x16a3f6fe8211057b!8m2!3d16.7187591!4d74.2333395!16s%2Fg%2F12hncbr_m!5m2!1e4!1e1?entry=ttu"
+             target="_blank"
+             class="location-link">
+             Kolhapur, Maharashtra
+          </a>
+        </p>
+
+        <a href="https://en.wikipedia.org/wiki/New_Palace,_Kolhapur"
+           target="_blank"
+           class="wiki-link">
+           Learn more on Wikipedia →
+        </a>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Mahalaxmi Temple -->
   <div class="modal fade" id="mahalaxmiModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
@@ -177,15 +195,28 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
         <div class="modal-body">
-          <p><strong>Location:</strong> Mahadwar Road, Kolhapur</p>
           <p><strong>History:</strong> One of the Shakti Peethas, the temple was built in the 7th century by the Chalukyas and is dedicated to Goddess Mahalaxmi, the deity of prosperity.</p>
           <p><strong>Nearby Restaurant:</strong> Padma Guest House – known for vegetarian meals and thalis.</p>
+
+          <p>
+          <strong>Location:</strong>
+          <a href="https://www.google.com/maps/place/New+Palace,+Kolhapur,+Maharashtra+416003/@16.7124997,74.3755529,11.07z/data=!4m6!3m5!1s0x3bc10063a906d069:0x16a3f6fe8211057b!8m2!3d16.7187591!4d74.2333395!16s%2Fg%2F12hncbr_m!5m2!1e4!1e1?entry=ttu"
+             target="_blank"
+             class="location-link">
+             Kolhapur, Maharashtra
+          </a>
+        </p>
+
+        <a href="https://en.wikipedia.org/wiki/New_Palace,_Kolhapur"
+           target="_blank"
+           class="wiki-link">
+           Learn more on Wikipedia →
+        </a>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Rankala Lake -->
   <div class="modal fade" id="rankalaModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
@@ -194,15 +225,28 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
         <div class="modal-body">
-          <p><strong>Location:</strong> Near Rajarampuri, Kolhapur</p>
           <p><strong>History:</strong> A scenic lake formed naturally, Rankala is surrounded by gardens and food stalls and is a popular leisure spot for both locals and tourists.</p>
           <p><strong>Nearby Restaurant:</strong> Dominos or Ice Cream Parlour by the lakefront.</p>
+
+          <p>
+          <strong>Location:</strong>
+          <a href="https://www.google.com/maps/place/New+Palace,+Kolhapur,+Maharashtra+416003/@16.7124997,74.3755529,11.07z/data=!4m6!3m5!1s0x3bc10063a906d069:0x16a3f6fe8211057b!8m2!3d16.7187591!4d74.2333395!16s%2Fg%2F12hncbr_m!5m2!1e4!1e1?entry=ttu"
+             target="_blank"
+             class="location-link">
+             Kolhapur, Maharashtra
+          </a>
+        </p>
+
+        <a href="https://en.wikipedia.org/wiki/New_Palace,_Kolhapur"
+           target="_blank"
+           class="wiki-link">
+           Learn more on Wikipedia →
+        </a>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Place of Birth -->
   <div class="modal fade" id="birthplaceModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
@@ -211,15 +255,28 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
         <div class="modal-body">
-          <p><strong>Location:</strong> Laxmipuri, Kolhapur</p>
           <p><strong>History:</strong> The birthplace of the revered King Shahu Maharaj, who played a major role in social reform and education development in Maharashtra.</p>
           <p><strong>Nearby Restaurant:</strong> Dehaati Kolhapuri – local food with traditional ambience.</p>
+
+          <p>
+          <strong>Location:</strong>
+          <a href="https://www.google.com/maps/place/New+Palace,+Kolhapur,+Maharashtra+416003/@16.7124997,74.3755529,11.07z/data=!4m6!3m5!1s0x3bc10063a906d069:0x16a3f6fe8211057b!8m2!3d16.7187591!4d74.2333395!16s%2Fg%2F12hncbr_m!5m2!1e4!1e1?entry=ttu"
+             target="_blank"
+             class="location-link">
+             Kolhapur, Maharashtra
+          </a>
+        </p>
+
+        <a href="https://en.wikipedia.org/wiki/New_Palace,_Kolhapur"
+           target="_blank"
+           class="wiki-link">
+           Learn more on Wikipedia →
+        </a>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Panhala Fort -->
   <div class="modal fade" id="panhalaModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
@@ -228,9 +285,24 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
         <div class="modal-body">
-          <p><strong>Location:</strong> Panhala, 20 km from Kolhapur</p>
           <p><strong>History:</strong> A historical hill fort where Chhatrapati Shivaji Maharaj once stayed. Offers panoramic views and deep-rooted Maratha history.</p>
           <p><strong>Nearby Restaurant:</strong> Hilltop Heritage Café – famous for local snacks and tea.</p>
+
+          <p>
+          <strong>Location:</strong>
+          <a href="https://www.google.com/maps/place/New+Palace,+Kolhapur,+Maharashtra+416003/@16.7124997,74.3755529,11.07z/data=!4m6!3m5!1s0x3bc10063a906d069:0x16a3f6fe8211057b!8m2!3d16.7187591!4d74.2333395!16s%2Fg%2F12hncbr_m!5m2!1e4!1e1?entry=ttu"
+             target="_blank"
+             class="location-link">
+             Kolhapur, Maharashtra
+          </a>
+        </p>
+          <p><strong>Location:</strong> Panhala, 20 km from Kolhapur</p>
+
+        <a href="https://en.wikipedia.org/wiki/New_Palace,_Kolhapur"
+           target="_blank"
+           class="wiki-link">
+           Learn more on Wikipedia →
+        </a>
         </div>
       </div>
     </div>
@@ -277,7 +349,7 @@
 
 
 <section class="blogs">
-  <h2>📰 Kolhapur Challenges & Insights</h2>
+  <h2>Kolhapur Challenges & Insights</h2>
   <p>
     Every city faces challenges as it grows. Kolhapur is no exception — 
     from managing floods to improving traffic and preserving heritage, 
@@ -357,9 +429,7 @@
     <p>© City Connect</p>
   </footer>
 
-  <!-- Bootstrap JS Bundle -->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
 
 </body>
 </html>

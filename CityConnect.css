@@ -20,7 +20,6 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* Welcome Section */
 .welcome {
   text-align: center;
   background: linear-gradient(135deg, #40e0d0, #20b2aa);
@@ -41,7 +40,6 @@ body {
   line-height: 1.8;
 }
 
-/* Info Section */
 .info {
   max-width: 900px;
   margin: 60px auto;
@@ -63,7 +61,6 @@ body {
   font-size: 1.2rem;
 }
 
-/* Buttons */
 .buttons {
   text-align: center;
   margin-top: 20px;
@@ -85,7 +82,6 @@ body {
   transform: translateY(-2px);
 }
 
-/* Map */
 .map {
   text-align: center;
   padding: 50px 20px;
@@ -106,18 +102,10 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* set this value to the navbar height + a few px (example 80px) */
 #tourist {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 100px;
 }
 
-/* make visual spacing and keep anchors working */
-#tourist {
-  padding-top: 80px;    /* space for navbar */
-  margin-top: -80px;    /* pull it back so visual layout doesn't jump */
-}
-
-/* Attraction Cards */
 .attraction-card {
   cursor: pointer;
   border: none;
@@ -149,7 +137,6 @@ body {
   font-size: 1.1rem;
 }
 
-/* Modal */
 .modal-content {
   border-radius: 15px;
 }
@@ -163,7 +150,31 @@ body {
   margin-bottom: 8px;
 }
 
-/* Emergency Section */
+.location-link {
+  color: #0d6efd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.location-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.wiki-link {
+  display: inline-block;
+  margin-top: 12px;
+  text-decoration: none;
+  color: #0d6efd;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.wiki-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
 .emergency {
   background: #fffaf5;
   padding: 40px 20px;
@@ -217,7 +228,6 @@ body {
   margin-top: 15px;
 }
 
-/* Blogs Section */
 .blogs {
   background-color: #fafafa;
   padding: 50px 30px;
@@ -239,7 +249,6 @@ body {
   line-height: 1.6;
 }
 
-/* Blog Cards */
 .blog-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -298,7 +307,6 @@ body {
   background: #0077cc;
 }
 
-/* Responsive */
 @media (max-width: 992px) {
   .blog-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -319,7 +327,6 @@ body {
   }
 }
 
-/* Footer */
 footer {
   background-color: #40e0d0;
   color: white;
